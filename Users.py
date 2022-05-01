@@ -296,23 +296,7 @@ class UsersClass:
         except Exception as ex:
             messagebox.showerror("Error",f"Error due to : {str(ex)}",parent=self.root)
 
-    def logout(self):
-        self.var_user_id.set(""),
-        self.var_name.set(""),
-        self.var_email.set(""),
-        self.var_gender.set("Select"),
-        self.var_phoneNumber.set(""),
 
-        self.var_dob.set(""),
-        self.var_dor.set(""),
-
-        self.var_pass.set(""),
-        self.var_utype.set("Package 1"),
-        self.txt_address.insert(""),
-        self.var_fees.set("")
-        self.var_searchtxt.set("")
-        self.var_searchby.set("Select")
-        self.show()
 
 if __name__=="__main__":
     root = Tk()
