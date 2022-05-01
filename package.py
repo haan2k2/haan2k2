@@ -184,7 +184,7 @@ class packageClass:
         self.var_pack_invoice.set(""),
         self.var_pack_name.set(""),
         self.var_capacity.set(""),
-        self.txt_desc.insert('1.0',END),
+        self.txt_desc.delete('1.0', END),
         self.var_searchtxt.set(""),
         self.show()
 
