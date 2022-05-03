@@ -98,6 +98,10 @@ class ISM:
             users=cur.fetchall()
             self.lbl_packet3.config(text=f'Total Packet 3\n[ {str(len(users))} ]')
 
+            time_=time.strftime("%I:%M:%S")
+            date_=time.strftime("%d:%m:%Y")
+            self.lbl_clock.config(text=f"Welcome to Internet Service Management\t\t Date: {str(date_)}\t\t Time: {str(time_)}")
+            self.lbl_clock.after(200,self.update_content)
         except Exception as ex:
             messagebox.showerror("Error",f"Error due to : {str(ex)}",parent=self.root)
 
