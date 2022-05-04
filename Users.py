@@ -72,7 +72,7 @@ class UsersClass:
 
        txt_email=Entry(self.root,textvariable=self.var_email,font=("goudy old style",15),bg="lightyellow").place(x=150,y=230,width=180)
        txt_pass=Entry(self.root,textvariable=self.var_pass,font=("goudy old style",15),bg="lightyellow").place(x=500,y=230,width=180)
-       cmb_utype=ttk.Combobox(self.root,textvariable=self.var_utype,values=("Packet 1", "Packet 2", "Packet 3"),state='readonly',justify=CENTER,font=("goudy old style",15))
+       cmb_utype=ttk.Combobox(self.root,textvariable=self.var_utype,values=("Package 1", "Package 2", "Package 3"),state='readonly',justify=CENTER,font=("goudy old style",15))
        cmb_utype.place(x=850,y=230,width=180)
        cmb_utype.current(0)
 

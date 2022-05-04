@@ -23,7 +23,7 @@ class packageClass:
 
        #=====Search========
        #==options===
-       lbl_search=Label(self.root,text="Packet No.",bg="white",font=("goudy old style",15))
+       lbl_search=Label(self.root,text="Package No.",bg="white",font=("goudy old style",15))
        lbl_search.place(x=700,y=80)
 
        txt_search=Entry(self.root,textvariable=self.var_searchtxt,font=("goudy old style",15),bg="lightyellow").place(x=800,y=80,width=160)

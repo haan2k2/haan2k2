@@ -45,13 +45,13 @@ class ISM:
         self.lbl_users=Label(self.root,text="Total Users\n[ 0 ]",bd=5,relief=RIDGE,bg="#33bbf9",fg="white",font=("goudy old style",20,"bold"))
         self.lbl_users.place(x=300,y=120,height=150,width=300)
         
-        self.lbl_packet1=Label(self.root,text="Total Packet 1\n[ 0 ]",bd=5,relief=RIDGE,bg="#ff5722",fg="white",font=("goudy old style",20,"bold"))
+        self.lbl_packet1=Label(self.root,text="Total Package 1\n[ 0 ]",bd=5,relief=RIDGE,bg="#ff5722",fg="white",font=("goudy old style",20,"bold"))
         self.lbl_packet1.place(x=650,y=120,height=150,width=300)
         
-        self.lbl_packet2=Label(self.root,text="Total Packet 2\n[ 0 ]",bd=5,relief=RIDGE,bg="#009688",fg="white",font=("goudy old style",20,"bold"))
+        self.lbl_packet2=Label(self.root,text="Total Package 2\n[ 0 ]",bd=5,relief=RIDGE,bg="#009688",fg="white",font=("goudy old style",20,"bold"))
         self.lbl_packet2.place(x=1000,y=120,height=150,width=300)
 
-        self.lbl_packet3=Label(self.root,text="Total Packet 3\n[ 0 ]",bd=5,relief=RIDGE,bg="#607d8b",fg="white",font=("goudy old style",20,"bold"))
+        self.lbl_packet3=Label(self.root,text="Total Package 3\n[ 0 ]",bd=5,relief=RIDGE,bg="#607d8b",fg="white",font=("goudy old style",20,"bold"))
         self.lbl_packet3.place(x=300,y=300,height=150,width=300)
         #===footer====
         lbl_footer=Label(self.root,text="ISM-Internet Service Management | Developed By Group 15\nFor any Contact: 0989999999",font=("times new roman",12),bg="#4d636d",fg="white").pack(side=BOTTOM,fill=X)
@@ -86,17 +86,17 @@ class ISM:
             users=cur.fetchall()
             self.lbl_users.config(text=f'Total Users\n[ {str(len(users))} ]')
 
-            cur.execute("select * from users where utype = 'Packet 1'")
+            cur.execute("select * from users where utype = 'Package 1'")
             users=cur.fetchall()
-            self.lbl_packet1.config(text=f'Total Packet 1\n[ {str(len(users))} ]')
+            self.lbl_packet1.config(text=f'Total Package 1\n[ {str(len(users))} ]')
 
-            cur.execute("select * from users where utype = 'Packet 2'")
+            cur.execute("select * from users where utype = 'Package 2'")
             users=cur.fetchall()
-            self.lbl_packet2.config(text=f'Total Packet 2\n[ {str(len(users))} ]')
+            self.lbl_packet2.config(text=f'Total Package 2\n[ {str(len(users))} ]')
 
-            cur.execute("select * from users where utype = 'Packet 3'")
+            cur.execute("select * from users where utype = 'Package 3'")
             users=cur.fetchall()
-            self.lbl_packet3.config(text=f'Total Packet 3\n[ {str(len(users))} ]')
+            self.lbl_packet3.config(text=f'Total Package 3\n[ {str(len(users))} ]')
 
             time_=time.strftime("%I:%M:%S")
             date_=time.strftime("%d:%m:%Y")
